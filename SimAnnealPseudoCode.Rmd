@@ -91,3 +91,12 @@ Call the function like this (for this example we start at the point (5,5), with 
 ```{r test}
 SimAnneal2D(XYSquared,c(5,5),10,0.1,0.02)
 ```
+
+When you want to try it on the Rosenbrock function, you can call that like this
+(Using the uploaded Rosenbrock.R script)
+```{r}
+source('Rosenbrock.r')
+MyRosenbrock<-function(x){
+  return (Rosenbrock(x)[[1]])
+}
+```
